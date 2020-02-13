@@ -1,0 +1,49 @@
+  .purchaseTable {
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+    }
+    td {
+      padding: 10px;
+      word-break: break-word;
+      border: 1px solid #DDDDDD;
+    }
+  em {
+      font-size: 22px;
+      font-family: reducto_condensed_ssiCn;
+      color: #999999;
+      font-style: normal;
+      font-weight: 500;
+  }
+    .head-th {
+      width: 200px;
+      text-align: right;
+      padding-right: 10px;
+      background: #f5f5f5;
+      font-weight: 500;
+    }
+  }
+  .table-lab{
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+    i{
+      display: inline-block;
+      width: 4px;
+      height: 20px;
+      margin-top: -4px;
+      background: #186DB7;
+      vertical-align: middle;
+    }
+    .lab{
+          font-size: 18px;
+          color: #186DB7;
+          font-weight: 500;
+          margin-left: 10px;
+    }
+    
+  }
+  .lab-t{
+    margin-top:20px
+  }
