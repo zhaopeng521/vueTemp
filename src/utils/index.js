@@ -348,3 +348,22 @@ export function removeClass(ele, cls) {
     ele.className = ele.className.replace(reg, ' ')
   }
 }
+// 节点向上递归查找
+export function getNodePath1(temppath,node,val) {
+        temppath.push(node);
+        //找到符合条件的节点，通过throw终止掉递归
+        if (node.id == val) {
+            throw ("GOT IT!");
+        }
+        if (node.childrens && node.childrens.length > 0) {
+            for (var i = 0; i < node.childrens.length; i++) {
+                getNodePath1(temppath,node.childrens[i],val);
+            }
+            //当前节点的子节点遍历完依旧没找到，则删除路径中的该节点
+            temppath.pop();
+        }
+        else {
+            //找到叶子节点时，删除路径当中的该叶子节点
+            temppath.pop();
+        }
+    }
