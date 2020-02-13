@@ -9,6 +9,11 @@ const zRouter = {
       component: () => import('@/views/examination/entrust'),
       name: 'entrust',
       meta: { title: '技术审查委托' }
+    },{
+      path: '/canvas',
+      component: () => import('@/views/canvas/video'),
+      name: 'video',
+      meta: { title: '视频抓拍' }
     }]
 }
 export default zRouter

@@ -4,6 +4,10 @@ const menuData = [{
   'link': '/home',
   'children': []
 }, {
+  'name': '视频截图',
+  'link': '/canvas',
+  'children': []
+}, {
   'name': '中介管理',
   'link': '/agentManage',
   'children': []
